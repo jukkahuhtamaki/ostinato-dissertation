@@ -1,0 +1,70 @@
+\usepackage[T1]{fontenc}
+\usepackage{lmodern} 
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[font=small,labelfont=bf]{caption}
+
+\usepackage{amsmath,amsfonts,latexsym,amssymb,graphicx,epstopdf,paralist}
+\usepackage{url}
+\usepackage{pdfpages} %for attaching publications
+\usepackage{textcomp} % Symbols such as copyright
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,pdftex]{hyperref}
+
+%Let the URL break after any of these characters. This prevents URLs to go beyond page.
+\expandafter\def\expandafter\UrlBreaks\expandafter{\UrlBreaks%  save the current one
+  \do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j%
+  \do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t%
+  \do\u\do\v\do\w\do\x\do\y\do\z\do\A\do\B\do\C\do\D%
+  \do\E\do\F\do\G\do\H\do\I\do\J\do\K\do\L\do\M\do\N%
+  \do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V\do\W\do\X%
+  \do\Y\do\Z}
+  
+\usepackage{truncate}
+
+\setlength{\parindent}{0pt}	%Paragraph indention
+\nonzeroparskip				%Memoir: paragraph skip to 0
+
+\usepackage{subcaption}
+\usepackage{enumitem}	% more advanced processing of enumerated lists. like resuming existing list.
+\usepackage{morefloats}
+\usepackage{booktabs}	%Publication quality tables
+\usepackage[kerning=true]{microtype}
+
+\usepackage{longtable}	%longtable environment, multi-page version of tabular
+\usepackage{siunitx}	%Comprehensive (SI) units package
+\usepackage{setspace}	%Set space between lines
+\usepackage{parskip}	%spacing between paragraphs
+\usepackage[printonlyused]{acronym}	%For acronyms
+%Corrects the font issue in list of acronyms
+%\renewcommand{\bflabel}[1]{{\textbf{#1}\hfill}}
+
+% add more space around en-dash (microtype package)
+\SetExtraKerning[unit=space]
+    {encoding={*}, family={cmr}, series={*}, size={footnotesize,small,normalsize}}
+    {\textendash={400,400}} 
+
+% memoir-class options/commands
+%\settypeblocksize{textheight}{textwidth}{*}
+\settypeblocksize{*}{13.5cm}{*}
+%\setlrmargins{spinemargin=sisämarginaali}{edge=reuna/ulkomarginaali}{ratio}
+%\setlrmargins{*}{1in}{*}
+\setlrmargins{*}{1.5cm}{*}
+%\setulmarginsandblock{uppermargin}{lowermargin}{ratio}
+%\setulmarginsandblock{3cm}{3cm}{*}
+\setulmarginsandblock{2.0cm}{2.2cm}{*}
+\checkandfixthelayout
+
+\nouppercaseheads
+\makeheadrule{headings}{\textwidth}{\normalrulethickness}
+
+% Numbering for subsections (specific to memoir class)
+\setsecnumdepth{subsubsection}
+
+\chapterstyle{section}
+
+\hyphenation{wi-de-spre-ad}
+
+% any preferred values here?   
+%\widowpenalty=10000
+
